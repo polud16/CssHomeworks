@@ -50,10 +50,19 @@ ul > li {
 
 .first-task li:first-child {
   color: white;
+  background: black;
+}
+
+.first-task > ul > li {
+  background: white;
 }
 
 .second-task ul:first-child li:first-child {
   color: yellow;
+}
+
+.second-task > ul > li {
+  background: white;
 }
 
 .third-task ul:last-child li:first-child {
