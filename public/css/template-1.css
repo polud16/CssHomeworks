@@ -1,3 +1,8 @@
+:root {
+  --text-color: green;
+  --space-medium: 24px;
+}
+
 .page {
   background: #ffffff;
   padding: 0 15px;
@@ -9,7 +14,7 @@
 }
 
 .header {
-  padding: 24px;
+  padding: var(--space-medium);
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -35,7 +40,8 @@
 
 .nav_link:hover {
   text-decoration: underline;
-  color: rgb(60, 62, 202);
+
+  opacity: 50%;
 }
 
 .nav_vertical > .nav_link {
@@ -43,7 +49,7 @@
 }
 
 .nav_inline > .nav_link:not(:last-child) {
-  margin-right: 24px;
+  margin-right: var(--space-medium);
 }
 
 .nav_vertical > .nav_link {
@@ -60,7 +66,7 @@
 }
 
 .footer {
-  padding: 24px 0;
+  padding: var(--space-medium) 0;
   border-top: 1px solid #dee2e6;
 }
 
@@ -74,7 +80,7 @@
 
 .footer_title {
   font-size: 20px;
-  color: #212529;
+  color: var(--text-color, #212529);
 
   display: block;
   margin-bottom: 12px;
@@ -82,7 +88,7 @@
 
 .hero_title {
   font-size: 56px;
-  color: #212529;
+  color: var(--text-color, #212529);
   font-weight: 500;
   margin-bottom: 12px;
   text-align: center;
@@ -90,7 +96,7 @@
 
 .hero_text {
   font-size: 20px;
-  color: #212529;
+  color: var(--text-color, #212529);
   text-align: center;
   max-width: 585px;
   margin: 0 auto;
@@ -98,23 +104,23 @@
 }
 
 .plans_card:not(:last-of-type) {
-  margin-right: 24px;
+  margin-right: var(--space-medium);
 }
 
 .card-header {
   padding: 12px;
   text-align: center;
-  font-size: 24px;
-  color: #212529;
+  font-size: var(--space-medium);
+  color: var(--text-color, #212529);
 }
 
 .card-body {
-  padding: 24px;
+  padding: var(--space-medium);
 }
 
 .card_price_amount {
   font-size: 40px;
-  color: #212529;
+  color: var(--text-color, #212529);
 }
 
 .card_price_duration {
@@ -128,12 +134,12 @@
 }
 
 .card_block:not(:last-of-type) {
-  margin-bottom: 24px;
+  margin-bottom: var(--space-medium);
 }
 
 .description_item {
   font-size: 16px;
-  color: #212529;
+  color: var(--text-color, #212529);
   display: block;
 }
 
@@ -158,6 +164,7 @@
   outline-offset: 5px;
   box-shadow: 5px 5px 10px 5px #679dd49c;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 h1 {
@@ -172,14 +179,125 @@ h1 {
   background: gray;
   /* text-align: left; */
   /* white-space: pre-line; */
-  max-width: 250px;
-  width: 300px;
+  max-width: 450px;
+  width: 500px;
   hyphens: manual;
   word-spacing: 5px;
-  overflow: auto;
-  resize: both;
+  /* overflow: auto;
+  resize: both; */
 }
 
 .overflow {
   overflow-wrap: keep-all;
+}
+
+body {
+  /* background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(121, 77, 246, 0.3) 0%,
+    rgba(85, 27, 251, 0.3) 0.01%,
+    rgba(255, 255, 255, 0) 100%
+  ); */
+  /* background-image: url('/img/test.png');
+  background-repeat: round; */
+}
+
+.page {
+  /* background-color: transparent;
+  background-image: url('/img/test 3.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+.hero_text {
+  /* background-image: url('/img/test 3.jpeg');
+  width: 500px;
+  height: 40px;
+  background-attachment: local;
+  overflow: auto; */
+  /* background-image: url('/img/test 3.jpeg');
+  width: 500px;
+  height: 300px;
+  border: 20px solid transparent; */
+  padding: 40px;
+  color: green;
+  font-size: 20px;
+  /* background-clip: text;
+  -webkit-background-clip: text; */
+  /* background-origin: border-box;
+  background-repeat: no-repeat;*/
+  border-image-source: url('/img/test 3.jpeg');
+  border-image-width: 10%;
+  border-image-slice: 10%;
+  border-image-repeat: stretch;
+  border-image-outset: auto;
+}
+
+.card_block {
+  /* list-style-type: upper-alpha; */
+  list-style-position: inside;
+  list-style-image: linear-gradient(
+    to bottom right,
+    blue,
+    red
+  );
+
+  padding: 0%;
+}
+
+.description_item {
+  display: list-item;
+}
+
+.table tr {
+  /* border: 1px solid black; */
+}
+
+.table td {
+  border: 1px solid rgb(53, 76, 204);
+  border-bottom-color: red;
+  border-right-color: yellow;
+}
+
+.table {
+  table-layout: fixed;
+
+  width: 600px;
+
+  border-collapse: unset;
+  border-spacing: 10px;
+  empty-cells: hide;
+}
+
+caption {
+  caption-side: top;
+}
+
+.nav_link::after,
+.nav_link::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url('/img/test 3.jpeg');
+}
+
+/* .nav_link::before {
+  content: open-quote;
+} */
+
+.nav_link::before {
+  margin-right: 10px;
+}
+
+.nav_link::after {
+  margin-left: 10px;
+}
+
+.calc {
+  width: 600px;
+  margin: 0;
+  margin-left: calc(50% - (600px / 2));
 }
