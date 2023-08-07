@@ -1,0 +1,10 @@
+<card class="articles">
+    {{#each data}}
+    <div class="article_item">
+        <img src="{{photo}}" alt="article photo" class="article_photo">
+        <div class="article_name">{{name}}</div>
+        <p class="article_info">{{description}}</p>
+        <button class="info_button">Read All</button>
+    </div>
+    {{/each}}
+</card>
