@@ -1,0 +1,35 @@
+{{#with hero}}
+<div class="hero">
+    <h1 class="hero_title">{{title}}</h1>
+    <p class="hero_text">{{description}}</p>
+    <a href="{{button.url}}" class="hero_button">{{button.text}}</a>
+</div>
+{{/with}}
+
+{{#with about}}
+<div class="about">
+    <h2 class="info_title">{{heading}}</h2>
+    <p class="info">{{info}}</p>
+</div>
+{{/with}}
+
+<main class="main">
+    <div class="article_heading">
+        <h3 class="article_title">Our Articles</h3>
+        <div class="article_button">
+            <a href="#" class="article_nav">View All</a>
+        </div>
+    </div>
+    {{> blackCard data=articles}}
+</main>
+
+{{#with footer}}
+<footer class="footer">
+    <div class="pages">
+        {{#each pages}}
+        <a href="{{path}}" class="footer_link">{{name}}</a>
+        {{/each}}
+    </div>
+    <span class="copyright">{{copyright}}</span>
+</footer>
+{{/with}}
