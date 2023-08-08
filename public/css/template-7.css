@@ -261,12 +261,13 @@
   flex-direction: column;
   gap: 16px;
   justify-content: space-between;
-  max-width: calc(var(--page-width) / 3 - 21px);
+  /* max-width: calc(var(--page-width) / 3 - 21px); */
   width: 100%;
 }
 
 .article_photo {
   border-radius: 24px;
+  width: 100%;
 }
 
 .article_name {

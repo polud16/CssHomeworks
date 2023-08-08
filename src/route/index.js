@@ -1041,7 +1041,7 @@ router.get('/template-7', function (req, res) {
     articles: [
       {
         id: 1,
-        photo: 'https://picsum.photos/400/200',
+        photo: 'https://picsum.photos/300/150',
         name: 'Lorem Ipsum',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id dolor eget sapien lobortis finibus. Fusce euismod, ipsum sit amet pulvinar imperdiet, sapien nunc viverra nulla, vel pulvinar velit leo sed velit.',
@@ -1049,14 +1049,14 @@ router.get('/template-7', function (req, res) {
       {
         id: 2,
         isNew: true,
-        photo: 'https://picsum.photos/400/200',
+        photo: 'https://picsum.photos/300/150',
         name: 'Dolor Sit Amet',
         description:
           'Etiam luctus ante eget ante convallis iaculis. Nunc viverra quam vel libero accumsan, non malesuada neque vestibulum. Curabitur malesuada, velit ut pretium ullamcorper, lacus elit vehicula sapien, ut sollicitudin quam metus eget sapien.',
       },
       {
         id: 3,
-        photo: 'https://picsum.photos/400/200',
+        photo: 'https://picsum.photos/300/150',
         name: 'Ipsum Dolor',
         description:
           'Sed euismod risus sit amet sapien fermentum, vitae scelerisque lectus hendrerit. Integer at velit tristique, varius dolor in, gravida est. Nunc sagittis justo vel velit tempor, eget faucibus nulla posuere.',
