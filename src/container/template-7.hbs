@@ -22,14 +22,3 @@
     </div>
     {{> blackCard data=articles}}
 </main>
-
-{{#with footer}}
-<footer class="footer">
-    <div class="pages">
-        {{#each pages}}
-        <a href="{{path}}" class="footer_link">{{name}}</a>
-        {{/each}}
-    </div>
-    <span class="copyright">{{copyright}}</span>
-</footer>
-{{/with}}
