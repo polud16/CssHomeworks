@@ -1,0 +1,25 @@
+:root {
+  --space-m: 12px;
+  --space-em: 16px;
+  --space-l: 24px;
+  --space-b: 36px;
+
+  --size-d: 16px;
+  --size-s: 14px;
+  --size-b: 20px;
+
+  --color-border: #dee2e6;
+  --color-primary: rgb(60, 62, 202);
+  --color-white: #ffffff;
+  --color-title: #212529;
+  --color-text: #343a40;
+
+  --border-radius: 12px;
+
+  --weight-title: 500;
+  --weight-text: 400;
+
+  --page-width: 960px;
+
+  font-family: 'Roboto';
+}
